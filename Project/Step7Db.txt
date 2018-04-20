@@ -1,0 +1,71 @@
+.echo on
+.headers on
+
+-- Name: Project7DatabaseImplementation.sql
+-- Author: Nia Rosa
+-- Date: April 4, 2018
+
+--1
+CREATE TABLE "CUSTOMER"
+(
+"CustID" Varchar Not Null Primary Key,
+	"CustName" Varchar,
+	"CustCity,State" Varchar,
+	"Phone_No" Varchar
+	);
+	
+--2
+INSERT INTO CUSTOMER VALUES ('A002', 'Ramada', 'Gainesville, Georgia', '4047324450')
+INSERT INTO CUSTOMER VALUES ('A001', 'Lopez', 'Warwick, Alabama', '2058897056')
+INSERT INTO CUSTOMER VALUES ('A003', 'Hook', 'Monroe, Georgia', '6175438120')
+INSERT INTO CUSTOMER VALUES ('A088', 'Boose', 'Valdosta, Georgia', '2106554210')
+
+--3
+CREATE TABLE "STORE"
+(
+"StoreCode" Not Null Primary Key,
+	"StoreName" Varchar,
+	"StoreAddress" Char
+	);
+	
+--4
+INSERT INTO STORE VALUES (
+INSERT INTO STORE VALUES (
+INSERT INTO STORE VALUES (
+
+--5
+CREATE TABLE "ACCOUNT"
+(
+"Ord_Num" Not Null Primary Key,
+	"OrderDate" int,
+	"Ord_Amount" money,
+	"Ord_Desc" nvarchar
+	);
+
+--6
+INSERT INTO ACCOUNT VALUES (00001, 1/18/2017, $1,233.00, 'Green Bookbag')
+INSERT INTO ACCOUNT VALUES (00002, 1/23/2017, $65.00, 'Pink skirt')
+INSERT INTO ACCOUNT VALUES (00003, 2/10/2017, $1.00, 'Tableware')
+INSERT INTO ACCOUNT VALUES (00004, 3/23/2018, $9,277.00, '2004 X5 BMW")
+
+--7
+CREATE TABLE "ITEM"
+(
+"ItemID" Not Null Primary Key,
+	"ItemColor" nvarchar,
+	"ItemSize" nvarchar,
+	"ItemPrice" money,
+	"ItemType" nvarchar
+	);
+
+--8
+INSERT INTO ITEM VALUES (
+INSERT INTO ITEM VALUES (
+INSERT INTO ITEM VALUES (
+INSERT INTO ITEM VALUES (
+INSERT INTO ITEM VALUES (
+
+
+
+
+
